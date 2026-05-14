@@ -14,10 +14,10 @@ module se1_play {
 
     /* Open package to JUnit test runner and the javadoc compiler. */
     opens application;
-
+    opens optionals; 
     /*
      * External modules required by this module.
      */
-     requires org.junit.jupiter.api;
+    // requires org.junit.jupiter.api;
      requires transitive runtimeSE;
 }
